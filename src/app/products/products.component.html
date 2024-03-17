@@ -1,0 +1,26 @@
+<div class="table-div">
+<table class="product-table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Image</th>
+      <th>Price</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of ProductList">
+      <td>{{ product?.id }}</td>
+      <td>{{ product?.name }}</td>
+      <td><img [src]="product.image" alt="{{ product.name }}" class="product-image"></td>
+      <td>{{product?.price}}$</td>
+      <td>
+        <button class="btn btn-success" [routerLink]="['/product-details/', product.id]"><i class="fa-solid fa-circle-info"></i></button>
+        <button class="btn btn-warning" [routerLink]="['/products/edit', product.id]"><i class="fa-solid fa-pen-to-square"></i></button>
+        <button class="btn btn-danger" (click)="delete(product.id)"><i class="fa-solid fa-trash"></i></button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>

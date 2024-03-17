@@ -1,0 +1,208 @@
+.firstSection .card img {
+    margin: auto;
+}
+
+.firstSection .card {
+    justify-content: center !important;
+    height: 250px;
+    padding: auto;
+    position: relative;
+    background-color: #F7F7F7;
+    border: none;
+}
+
+.firstSection .card-body {
+    position: absolute;
+    top: 30px;
+}
+
+.firstSection .card-body {
+    font-size: 17px;
+    padding: 0 30px;
+    text-align: left;
+}
+
+.firstSection span {
+    color: #bda185;
+}
+
+.firstSection .paragraph {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.firstSection .card .img {
+    height: 200px;
+}
+
+.firstSection .card1 .card-body {
+    top: 100px;
+}
+
+.firstSection .card-body p a {
+    text-decoration: none;
+    color: gray;
+}
+
+.firstSection .card3 .card-body {
+    top: 100px;
+}
+
+.firstSection .card1 img {
+    width: 230px;
+    margin-left: 150px;
+    margin-top: -20px;
+}
+
+.firstSection .card2 img {
+    width: 200px;
+    margin-top: -70px;
+    margin-left: 180px;
+}
+
+.firstSection .card3 img {
+    width: 160px;
+    margin-top: 0px;
+    margin-left: 180px;
+}
+
+.icons {
+    padding: 70px 0;
+    text-transform: uppercase;
+}
+
+.icons p {
+    font-size: 14px;
+}
+
+.icons div {
+    text-align: center;
+}
+
+.icons i {
+    font-size: 22px;
+    padding: 10px 0px;
+}
+
+.newArrivals {
+    padding: 0px 0px 50px 0px;
+    text-transform: uppercase;
+}
+
+.newArrivals p {
+    text-transform: lowercase;
+}
+
+.newArrivals .card-body {
+    font-size: 16px;
+}
+
+.newArrivals .card {
+    background-color: #F7F7F7;
+    border: none;
+}
+
+.newArrivals h2 {
+    font-weight: bold;
+}
+
+.newArrivals .card{
+    margin: auto;
+    width: 230px;
+}
+
+.newArrivals .card .card-body {
+    background-color: #fff;
+}
+
+.newArrivals .card-title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.newArrivalsP {
+    margin: auto;
+    width: 900px;
+    font-size: 14px;
+}
+
+.newArrivals .card-text {
+    font-size: 14px;
+    color: gray;
+}
+
+.vase {
+    justify-content: end;
+}
+
+.vase .col-9 {
+    padding: 50px;
+    margin-left: 80px;
+    background-color: #F7F7F7;
+    text-align: left;
+    border-radius: 10px;
+
+}
+
+.vase .col-9 p {
+    font-size: 14px;
+}
+
+.vase .col-9 h5 {
+    font-weight: bold;
+}
+
+.vase .col-9 img {
+    margin-left: 80px;
+    width: 400px;
+}
+
+.vase .col-9 button {
+    background-color: gray;
+    color: #fff;
+    width: 60%;
+    margin: auto;
+}
+
+.vase .col-9 button:hover {
+    background-color: rgb(141, 140, 140);
+    color: #fff;
+}
+
+.vase .col-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.vase .col-2 .stacked-div img {
+    width: 150px;
+}
+
+.vase .col-2 .stacked-div1 img {
+    margin-left: 70px;
+    width: 130px;
+}
+
+.vase .col-2 .stacked-div2 img {
+    width: 100px;
+    margin-top: 30px;
+}
+
+.vase .col-2 .stacked-div {
+    background-color: #F7F7F7;
+    margin-bottom: 10px;
+    width: 200px;
+    text-align: center;
+    /* padding: 50px; */
+    height: 150px !important;
+    border: 1px solid #F7F7F7;
+    border-radius: 10px;
+}
+
+.vase .col-2 .stacked-div1 {
+    border: 1px solid #e6e3e3;
+}
+
+.vase h2 {
+    font-weight: bold;
+}

@@ -1,0 +1,38 @@
+.content {
+    padding: 150px 0;
+}
+
+.card-header {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+img {
+    width: 350px;
+}
+
+p {
+    font-size: 14px;
+}
+
+button {
+    background-color: gray;
+    color: #fff;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(141, 140, 140);
+}
+
+.card {
+    width: 500px;
+    margin: auto;
+    background-color: #f7f7f7;
+
+}
+
+span {
+    font-weight: bold;
+    color: rgb(26, 25, 25);
+}

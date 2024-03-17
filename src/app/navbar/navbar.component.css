@@ -1,0 +1,31 @@
+nav {
+    background-color: gray!important;
+    padding: 15px 20px;
+    color: #fff!important;
+    text-transform: uppercase;
+    font-weight: 200;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+.container-fluid ul {
+    text-align: center;
+    justify-content: center !important;
+    align-items: center;
+    margin-left: 300px;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+ul li a {
+    color: #fff !important;
+}
+.active{
+   border: 1px solid #fff;
+}
+h4{
+    padding-left: 22px;
+}

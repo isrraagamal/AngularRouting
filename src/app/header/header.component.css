@@ -1,0 +1,35 @@
+.headerContent {
+    background-color: #F7F7F7;
+    padding: 90px 0 20px 0;
+}
+
+img {
+    width: 90%;
+}
+
+.col-8 {
+    padding: 60px 30px 60px 70px;
+}
+
+button {
+    background-color: rgb(126, 126, 126);
+    color: #fff;
+}
+
+p {
+    width: 70%;
+    font-size: 14px;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(141, 140, 140);
+    color: #fff;
+}
+
+button i {
+    padding-right: 10px;
+}

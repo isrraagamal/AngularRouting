@@ -1,0 +1,20 @@
+<div class="text-center content" *ngIf ="product; else notFound;">
+    <div class="card-header">
+      {{product?.name}}
+    </div>
+    <br>
+    <div class="card-body">
+      <p class="card-title"><span>PRICE:</span> {{product?.price}}$</p>
+      <img [src]="product?.image" alt=""/>
+      <p class="card-text text-muted"><span>DESCRIPTION:</span> {{product?.description}}</p>
+      <p class="card-text" *ngIf="product?.onsale"><span>DISCOUNT:</span>  {{product?.discount}}%</p>
+      <p class="card-text" *ngIf="product?.quantity ==0"><span>SOLD OUT</span></p><br>
+      <button href="#" class="btn btn-primary" [disabled]="product?.quantity == 0">ADD TO CART</button>
+    </div>
+    <div class="card-footer text-body-secondary">
+      
+    </div>
+  </div>
+<ng-template #notFound>
+<p>This id is not valid</p>
+</ng-template>

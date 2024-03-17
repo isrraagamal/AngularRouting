@@ -1,0 +1,17 @@
+main{
+    padding: 150px 150px 150px 150px;
+    margin: auto;
+}
+img{
+    width: 400px;
+}
+.content{
+    height: 100vh;
+    text-align: center;
+}
+button{
+    background-color: gray!important;
+    border: none;
+    color: #fff;
+
+}

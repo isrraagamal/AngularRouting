@@ -1,0 +1,17 @@
+img{
+    width: 55%;
+    margin-top: 70px;
+}
+h3{
+    margin: -320px 0 50px 300px;
+    font-weight: bold;
+    
+}
+.content{
+    width: 100%;
+}
+button{
+    background-color: gray!important;
+    border: none;
+    color: #fff!important;
+}

@@ -1,0 +1,89 @@
+<div class="content row">
+    <div class="col-6">
+      <img src="assets/images/1.png" alt="" />
+      <h3 class="text-uppercase">Add Product</h3>
+    </div>
+    <form [formGroup]="productForm" class="col-5 p-5" (submit)="onSubmit($event)">
+      <!-- <h4 class="text-center">PRODUCTS FORM</h4> -->
+      <br>
+      <br>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input formControlName="name" [ngClass]="{'is-valid': nameControl?.valid , 'is-invalid': nameControl?.errors && nameControl?.touched }"
+          name="name" type="text" class="form-control" id="name" required>
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">
+          <ng-container *ngIf=" nameControl?.hasError('required')">
+            Name is required
+          </ng-container>
+          <ng-container *ngIf=" nameControl?.hasError('minlength')">
+            Name must be at least 5 characters length
+          </ng-container>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="price" class="form-label">Price $</label>
+        <input formControlName="price" name="price" 
+        [ngClass]="{'is-valid': priceControl?.valid , 'is-invalid': priceControl?.errors && priceControl?.touched }"
+        type="number" class="form-control" id="price" required>
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback"><ng-container *ngIf=" priceControl?.hasError('required')">
+            Price is required
+          </ng-container>
+          <ng-container *ngIf=" priceControl?.hasError('min')">
+            Price must be at least 100$
+          </ng-container>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="quantity" class="form-label">Quantity</label>
+        <input formControlName="quantity" name="quantity"
+        [ngClass]="{'is-valid': quantityControl?.valid , 'is-invalid': quantityControl?.errors && quantityControl?.touched }"
+        type="number" class="form-control" id="quantity" required>
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback"><ng-container *ngIf=" quantityControl?.hasError('required')">
+            Quantity is required
+          </ng-container>
+          <ng-container *ngIf=" quantityControl?.hasError('min')">
+            Quantity must be at least 5
+          </ng-container>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="discount" class="form-label">Discount %</label>
+        <input formControlName="discount" name="discount"
+        [ngClass]="{'is-valid': discountControl?.valid , 'is-invalid': discountControl?.errors && discountControl?.touched }"
+         type="number" class="form-control" id="discount" required>
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback"><ng-container *ngIf=" discountControl?.hasError('required')">
+            Discount is required
+          </ng-container>
+          <ng-container *ngIf="discountControl?.errors?.['min']">
+            Discount must be Between 5% and 25%
+          </ng-container>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <input formControlName="description" name="description"
+          [ngClass]="{'is-valid': descriptionControl?.valid , 'is-invalid': descriptionControl?.errors && descriptionControl?.touched }"
+          type="string" class="form-control" id="description" required>
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback"><ng-container *ngIf=" descriptionControl?.hasError('required')">
+            Description is required
+          </ng-container>
+          <ng-container *ngIf=" descriptionControl?.hasError('minlength')">
+            Description must be at least 4 characters length
+          </ng-container>
+        </div>
+      </div>
+      <div class="mb-3 form-check">
+        <input formControlName="onsale" name="onsale" type="checkbox" class="form-check-input" id="check">
+        <label class="form-check-label" for="check">On Sale</label>
+      </div>
+      <br>
+      <div class="submitbtn">
+        <button [disabled]="!productForm.valid" type="submit" class="btn">Submit</button>
+      </div>
+    </form>
+  </div>
